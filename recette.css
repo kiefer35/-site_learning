@@ -9,9 +9,8 @@ body {
 
 div.contenu{
     background-color: white;
-    margin: 60px 6% 80px 6%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 20px 8px;
+    padding: 0px 8px 20px 8px;
     box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.15);
     overflow: visible;
 }
@@ -71,29 +70,32 @@ table.info{
     width: 100%; 
     color: white; 
     background-color: #6C829DC0; 
-    height: 80px;
+    height: 50px;
 }
 
 table.info td{
     text-align: center;
     vertical-align: top;
-    font-size: 1.2em;
+    font-size: 12px;
 }
 
 table.info th{
-    font-size: 1.4em;
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
 }
 
 img.info{
     display: block;
-    max-height: 480px;
+    max-height: 400px;
     object-fit: cover;
-    min-height: 480px;
+    min-height: 200px;
     background-color: grey;
 }
 
-div.colonne{    
-    margin-top: 20px;
+div.colonne{   
+    width: 100%; 
+    margin-top: 20px; 
 }
 
 div.colonne h2{
@@ -105,15 +107,8 @@ div.colonne h2{
 }
 
 div.colonne1{
-    width: 40%;
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2{
-    width: 50%;
-    float: right;
-}
+} 
 
 div.ingredients p{
     font-size: 1.2em;
@@ -151,4 +146,58 @@ table.preparation td.preparation_etape{
 
 table.preparation tr{
     height: 40px;
+}
+
+/* Style pour desktop */
+@media only screen and (min-width: 768px){
+
+    div.contenu{
+        margin: 60px 6% 80px 6%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+
+    table.info{
+        height: 80px;
+    }
+    
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+    }
+
+    div.colonne{    
+        width: 45%; 
+    }
+    
+    div.colonne h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        border-bottom: 5px solid#6C829D;
+        padding-bottom: 5px;
+    }
+    
+    div.colonne1{
+        margin-right: 10%;
+    }
+    
+    div.colonne2{
+        float: right;
+    }
+
+}
+
+/* Style pour super grand écran desktop */
+@media only screen and (min-width: 900px){
+
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+
 }
